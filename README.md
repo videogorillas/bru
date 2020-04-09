@@ -72,7 +72,9 @@ docker run --rm -d \
 #### UI
 
 Statuses: 
+
 OK: inqueue -> reserved -> done
+
 FAIL: inqueue -> reserved -> buried
 
 Result preview and download link are unavailable until processing is finished
