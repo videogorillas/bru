@@ -44,7 +44,9 @@ docker pull ***:worker
 ```
 
 **STEPS** - number of iterations ~10 minutes per iteration (1 - bad, 4 - better, 8 - good)
+
 **OUTPUT_SIZE** - size of output axf NxN in px
+
 **MAX_CONTENT_LENGTH** - default max content length for uploaded image (100Mb) 
 
 
@@ -70,6 +72,9 @@ docker run --rm -d \
 ```
 
 #### UI
+
+
+Observe UI on http://your.server:8080
 
 Statuses: 
 
