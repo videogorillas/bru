@@ -58,8 +58,8 @@ docker pull ***:worker
 ```shell script
 docker run --rm -d \
 -v ${CONFIG}:/home/ubuntu/ws/config.json \
--v ${DATA_FOLDER}:/home/ubuntu/ws/data/
--p 8080:8080
+-v ${DATA_FOLDER}:/home/ubuntu/ws/data/ \
+-p 8080:8080 \
 ***:webserver
 ```
 
@@ -68,7 +68,8 @@ docker run --rm -d \
 ```shell script
 docker run --rm -d \
 -v ${CONFIG}:/home/ubuntu/textureGAN/config.json \
--v ${DATA_FOLDER}:/home/ubuntu/textureGAN/data/
+-v ${DATA_FOLDER}:/home/ubuntu/textureGAN/data/ \
+--shm-size="16g" \
 ***:worker
 ```
 
