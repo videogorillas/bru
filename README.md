@@ -7,11 +7,12 @@
 
 ```shell script
 DATA_FOLDER=/absolute/path/to/data_folder/
-WEIGHTS=/absolute/path/to/downloaded/weights/
+WEIGHTS=/absolute/path/to/downloaded/weights.zip
 CONFIG=/absolute/path/to/config.json
 
 mkdir -p ${DATA_FOLDER}/checkpoints/pretrained/
-rsync -av ${WEIGHTS} ${DATA_FOLDER}/checkpoints/pretrained/
+cd ${DATA_FOLDER}/checkpoints/pretrained/
+unzip ${WEIGHTS} 
 ```
 
 3. Download images
